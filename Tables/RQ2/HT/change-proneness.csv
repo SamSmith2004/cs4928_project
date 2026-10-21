@@ -1,0 +1,11 @@
+Refactoring Family,ChiSquare,DF,p-value,,Refactoring Family,ChiSquare,DF,p-value
+\cellcolor{gray15}Add,\cellcolor{gray15}1097.5763,\cellcolor{gray15}190,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Move,\cellcolor{gray15}937.9921,\cellcolor{gray15}165,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Assert,\cellcolor{gray15}165.0874,\cellcolor{gray15}17,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Parameterize,\cellcolor{gray15}356.0281,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Change,\cellcolor{gray15}623.1438,\cellcolor{gray15}165,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Pull,\cellcolor{gray15}166.6922,\cellcolor{gray15}10,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Encapsulate,\cellcolor{gray15}85.5960,\cellcolor{gray15}34,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Push,\cellcolor{gray15}61.2158,\cellcolor{gray15}12,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Extract,\cellcolor{gray15}715.4987,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Remove,\cellcolor{gray15}616.0260,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Inline,\cellcolor{gray15}244.2007,\cellcolor{gray15}44,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Rename,\cellcolor{gray15}548.8002,\cellcolor{gray15}82,\cellcolor{gray15}$<$0.0001
+Invert,60.6522,56,0.3119,,\cellcolor{gray15}Reorder,\cellcolor{gray15}39.2957,\cellcolor{gray15}14,\cellcolor{gray15}0.0003
+Localize,71.9896,56,0.0737,,\cellcolor{gray15}Replace,\cellcolor{gray15}69.8012,\cellcolor{gray15}34,\cellcolor{gray15}0.0003
+\cellcolor{gray15}Merge,\cellcolor{gray15}64.5427,\cellcolor{gray15}26,\cellcolor{gray15}$<$0.0001,,Split,75.0444,56,0.0455
+\cellcolor{gray15}Modify,\cellcolor{gray15}406.9581,\cellcolor{gray15}65,\cellcolor{gray15}$<$0.0001,,Try,69.8739,56,0.1006

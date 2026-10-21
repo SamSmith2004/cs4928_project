@@ -1,0 +1,12 @@
+Refactoring Family,ChiSquare,DF,p-value,,Refactoring Family,ChiSquare,DF,p-value
+\cellcolor{gray15}Add,\cellcolor{gray15}5674.6894,\cellcolor{gray15}190,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Modify,\cellcolor{gray15}1279.2289,\cellcolor{gray15}65,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Assert,\cellcolor{gray15}109.2006,\cellcolor{gray15}17,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Move,\cellcolor{gray15}2302.8577,\cellcolor{gray15}165,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Change,\cellcolor{gray15}5733.3615,\cellcolor{gray15}165,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Parameterize,\cellcolor{gray15}479.9441,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Encapsulate,\cellcolor{gray15}81.5739,\cellcolor{gray15}34,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Pull,\cellcolor{gray15}158.5907,\cellcolor{gray15}10,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Extract,\cellcolor{gray15}4418.0128,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Push,\cellcolor{gray15}81.6112,\cellcolor{gray15}12,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Inline,\cellcolor{gray15}564.5407,\cellcolor{gray15}44,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Remove,\cellcolor{gray15}3179.5227,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001
+Invert,67.3806,56,0.1418,,\cellcolor{gray15}Rename,\cellcolor{gray15}3808.1002,\cellcolor{gray15}82,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Localize,\cellcolor{gray15}134.8105,\cellcolor{gray15}56,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Reorder,\cellcolor{gray15}33.7462,\cellcolor{gray15}14,\cellcolor{gray15}0.0022
+\cellcolor{gray15}Merge,\cellcolor{gray15}215.9336,\cellcolor{gray15}26,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Replace,\cellcolor{gray15}307.0007,\cellcolor{gray15}34,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Modify,\cellcolor{gray15}1279.2289,\cellcolor{gray15}65,\cellcolor{gray15}$<$0.0001,,Split,57.4565,56,0.4210
+\cellcolor{gray15}Move,\cellcolor{gray15}2302.8577,\cellcolor{gray15}165,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Try,\cellcolor{gray15}103.3575,\cellcolor{gray15}56,\cellcolor{gray15}0.0001

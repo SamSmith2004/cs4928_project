@@ -1,0 +1,9 @@
+﻿Refactoring type,Rename Parameter
+Project,https://github.com/apache/jmeter
+Affected class,src\core\org\apache\jmeter\gui\util\TextAreaCellRenderer.java
+Refactoring commit,c2ec8a122aeffd52b4207c8dba381619b5c709e7
+"Subsequent 
+refactoring commits","69cb24419be822f605e56f0960d60eea57eb44aa, 
+b7799e1602f257ab491c836bd57f416c87c5c04e, 
+17ae7f8cb9f128c5a37d0858deaf29039011a514, 
+f6dafdf60d669a815ae677f9a87fcafd28c6197c"

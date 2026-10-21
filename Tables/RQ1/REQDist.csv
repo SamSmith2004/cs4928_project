@@ -1,0 +1,12 @@
+Percentage,Label,Value
+100,maximum,191
+"99,50",,75
+"97,50",,36
+90,,19
+75,quartile,9
+50,median,4
+25,quartile,2
+10,,1
+"2,50",,1
+"0,50",,1
+0,minimum,1

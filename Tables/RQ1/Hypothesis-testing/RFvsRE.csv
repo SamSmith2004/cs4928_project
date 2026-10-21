@@ -1,0 +1,11 @@
+Refactoring Family,p-value,,Refactoring Family,p-value
+\cellcolor{gray!15}Add,\cellcolor{gray!15}$<$.0001,,\cellcolor{gray!15}Move,\cellcolor{gray!15}$<$.0001
+Assert,$\cdot$,,\cellcolor{gray!15}Parameterize,\cellcolor{gray!15}$<$.0001
+\cellcolor{gray!15}Change,\cellcolor{gray!15}$<$.0001,,\cellcolor{gray!15}Pull,\cellcolor{gray!15}0.0023
+Encapsulate,$\cdot$,,\cellcolor{gray!15}Push,\cellcolor{gray!15}$<$.0001
+\cellcolor{gray!15}Extract,\cellcolor{gray!15}$<$.0001,,\cellcolor{gray!15}Remove,\cellcolor{gray!15}$<$.0001
+Inline,0.1225,,\cellcolor{gray!15}Rename,\cellcolor{gray!15}$<$.0001
+Invert,$\cdot$,,Reorder,$\cdot$
+Localize,$\cdot$,,\cellcolor{gray!15}Replace,\cellcolor{gray!15}$<$.0001
+\cellcolor{gray!15}Merge,\cellcolor{gray!15}$<$.0001,,\cellcolor{gray!15}Split,\cellcolor{gray!15}$<$.0001
+\cellcolor{gray!15}Modify,\cellcolor{gray!15}$<$.0001,,Try,$\cdot$

@@ -1,0 +1,18 @@
+Abbreviation,Extended name
+LOC,Lines of Code
+QMOOD,Quality model for object-oriented design
+R,Set of methods and fields that are part of refactoring edits
+C,Set of methods and fields that are part of atomic changes
+T,Set of methods and fields exercised by existing tests
+ATR,Affecting tests that exercise at least one refactoring edit location
+ACR,Affecting changes whose location overlaps with at least one refactoring edit
+ACRF,"Subset of affecting changes for the failed tests that exercise the location of 
+refactoring edits"
+RT,Intersection between R and T
+CT,Intersection between C and T
+DOCMS(R),Dependency oriented complexity metric for structure
+DOCMA(CR),Dependency oriented complexity metric for an artifact causing ripples
+DOCMA(AR),Dependency oriented complexity metric for an artifact affected by ripples
+RE,Ripple Effect
+CP,Change Proneness
+DP,Defect Proneness

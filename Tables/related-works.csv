@@ -1,0 +1,14 @@
+Related works,Sample Size,Refactoring,,,,Time Dependence
+,,\#types,Analysis,RE,Impact,
+\cite7816501,1 project,undefined,"Subjective developer feedback, Quantitative analysis from SATs",No,"Faults (FindBugs), Code duplicates (PMD), LOC",Single Snapshot
+\cite8456513,85 code smells* (1 project),2,Quantitative and qualitative evaluation on refactoring recommendations,No,Traceability entropy Entity Placement Developers' voting,Single Snapshot
+\cite10.1145/3387940.3392191,14 projects,1,ML classification Quantitative evaluation,No,"Precision, Recall, F1",Single Snapshot
+\cite9130035,30 projects 15 developers,15,Correlation analysis Qualitative survey,No,QMOOD metrics Code Security Metrics Correlation coefficients Developers' perception,Single Snapshot
+\cite10.1145/3106237.3106259,"23 projects 16,566 refactorings",10,Longitudinal multinomial classification of refactoring impacts on code smells,No,Code Smells,Single Snapshot
+\citeSellitto2022,"156 projects 96,268 commits",79,Multinomial Log-Linear Regression,No,Code Readability,Single Snapshot
+\cite8667992,"619 projects 1,448 refactorings",10,Statistical Inference (Wilcoxon signed-rank test),No,Cross-Entropy,Double Snapshot (Before and after)
+\cite10.1145/3485136,"17 projects 69 commits 1,534 refactorings",16,Correlation analysis Qualitative manual inspection Statistical comparison of refactoring density,No,Execution Time Performance Change Magnitude of Performance Change,Double Snapshot (Before and after)
+\cite6405293,3 projects 1676 commits 1113 refactorings,20,Quantitative descriptive analysis,No,"RTC, CTC, TTC, ATR, ACR, ACRF, RTCT",Yes (Inter-release analysis)
+\citereddy2009dependency,4 hypothetical example designs,0,Definition of dependency oriented complexity metrics,Yes,"DOCMS(R), DOCMA(CR), DOCMA(AR)",Single Snapshot
+\citerobbes2011study,2463 projects 2942 contributors,2,Heuristic-based method deprecation detection Qualitative manual inspection,Yes,"Addition of provider RE, Removal of provider RE, Rename of provider RE",Ripple propagation over time
+Our work,"48 projects 4,766 commits 108,523 refactorings",96,"Statistical Inference (Wilcoxon signed-rank test, Dunn's All-Pairs test) Correlation Analysis (Spearman's Correlation Coefficient)",Yes,"Refactoring impact RE, CP, DP Change Efficiency",Ripple propagation over time

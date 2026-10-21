@@ -1,0 +1,11 @@
+Refactoring Family,\#,\%,Refactoring Family,\#,\%
+Add,23597,21.74,Pull,1274,1.17
+Change,22221,20.48,Merge,900,0.83
+Remove,15133,13.94,Encapsulate,503,0.46
+Rename,14762,13.60,Assert,287,0.26
+Extract,12064,11.12,Invert,265,0.24
+Move,7074,6.52,Split,248,0.23
+Modify,4402,4.06,Localize,192,0.18
+Replace,2051,1.89,Push,155,0.14
+Inline,1859,1.71,Try,139,0.13
+Parameterize,1287,1.19,Reorder,110,0.10

@@ -1,0 +1,50 @@
+Refactoring Type,\#,\%,Refactoring Type,\#,\%
+Change Variable Type,7478,6.89,Replace Variable With Attribute,366,0.34
+Extract Method,5597,5.16,Change Class Access Modifier,310,0.29
+Add Parameter,5396,4.97,Assert Throws,287,0.26
+Rename Method,4348,4.01,Move And Rename Class,286,0.26
+Change Parameter Type,4308,3.97,Invert Condition,265,0.24
+Rename Variable,4186,3.86,Modify Parameter Annotation,248,0.23
+Add Method Annotation,4050,3.73,Move Code,246,0.23
+Rename Parameter,3863,3.56,Extract Class,230,0.21
+Remove Attribute Modifier,3661,3.37,Remove Attribute Annotation,218,0.20
+Add Class Annotation,3659,3.37,Localize Parameter,192,0.18
+Change Return Type,3587,3.31,Add Class Modifier,188,0.17
+Change Method Access Modifier,3493,3.22,Replace Attribute With Variable,177,0.16
+Move Method,3257,3.00,Move And Rename Method,148,0.14
+Add Variable Modifier,3205,2.95,Try With Resources,139,0.13
+Extract Variable,3077,2.84,Split Conditional,134,0.12
+Remove Thrown Exception Type,2560,2.36,Push Down Method,127,0.12
+Modify Method Annotation,2510,2.31,Merge Parameter,118,0.11
+Add Parameter Modifier,2340,2.16,Reorder Parameter,110,0.10
+Remove Parameter,2316,2.13,Remove Variable Annotation,107,0.10
+Extract And Move Method,2176,2.01,Replace Conditional With Ternary,107,0.10
+Move Class,1964,1.81,Extract Superclass,98,0.09
+Remove Class Annotation,1826,1.68,Move And Inline Method,95,0.09
+Remove Method Annotation,1799,1.66,Parameterize Attribute,91,0.08
+Rename Attribute,1676,1.54,Remove Class Modifier,91,0.08
+Add Parameter Annotation,1659,1.53,Replace Loop With Pipeline,91,0.08
+Change Attribute Type,1574,1.45,Move Source Folder,90,0.08
+Inline Variable,1312,1.21,Split Method,79,0.07
+Parameterize Variable,1196,1.10,Replace Anonymous With Lambda,63,0.06
+Replace Generic With Diamond,1143,1.05,Move Package,59,0.05
+Add Attribute Modifier,1141,1.05,Rename Package,58,0.05
+Add Thrown Exception Type,1073,0.99,Merge Variable,52,0.05
+Change Attribute Access Modifier,1011,0.93,Add Variable Annotation,51,0.05
+Modify Class Annotation,944,0.87,Replace Anonymous With Class,51,0.05
+Move Attribute,910,0.84,Inline Attribute,50,0.05
+Pull Up Method,858,0.79,Replace Pipeline With Loop,47,0.04
+Extract Attribute,844,0.78,Extract Interface,32,0.03
+Remove Variable Modifier,781,0.72,Merge Attribute,31,0.03
+Remove Parameter Modifier,711,0.66,Merge Method,28,0.03
+Modify Attribute Annotation,700,0.65,Push Down Attribute,28,0.03
+Merge Conditional,634,0.58,Merge Catch,27,0.02
+Rename Class,631,0.58,Move And Rename Attribute,19,0.02
+Remove Parameter Annotation,554,0.51,Split Parameter,18,0.02
+Remove Method Modifier,509,0.47,Change Type Declaration Kind,15,0.01
+Encapsulate Attribute,503,0.46,Extract Subclass,10,0.01
+Inline Method,497,0.46,Merge Class,10,0.01
+Change Thrown Exception Type,445,0.41,Split Class,9,0.01
+Add Attribute Annotation,423,0.39,Replace Attribute,6,0.01
+Pull Up Attribute,416,0.38,Split Attribute,4,0.00
+Add Method Modifier,412,0.38,Split Package,4,0.00

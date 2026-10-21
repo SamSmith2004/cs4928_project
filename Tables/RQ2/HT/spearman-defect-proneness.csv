@@ -1,0 +1,11 @@
+Refactoring Family,Spearman $\rho$,p-value,,Refactoring Family,Spearman $\rho$,p-value
+\cellcolor{gray15}Add,\cellcolor{gray15}0.1206,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Move,\cellcolor{gray15}0.1691,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Assert,\cellcolor{gray15}0.2541,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Parameterize,\cellcolor{gray15}0.2656,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Change,\cellcolor{gray15}0.1209,\cellcolor{gray15}$<$0.0001,,Pull,0.0591,0.0348
+Encapsulate,-0.0391,0.3821,,Push,-0.0241,0.7656
+\cellcolor{gray15}Extract,\cellcolor{gray15}0.1316,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Remove,\cellcolor{gray15}0.0700,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Inline,\cellcolor{gray15}0.1275,\cellcolor{gray15}$<$0.0001,,\cellcolor{gray15}Rename,\cellcolor{gray15}0.1386,\cellcolor{gray15}$<$0.0001
+\cellcolor{gray15}Invert,\cellcolor{gray15}0.2427,\cellcolor{gray15}$<$0.0001,,Reorder,0.1350,0.1596
+Localize,0.0392,0.5893,,\cellcolor{gray15}Replace,\cellcolor{gray15}0.0837,\cellcolor{gray15}0.0001
+\cellcolor{gray15}Merge,\cellcolor{gray15}0.1210,\cellcolor{gray15}0.0003,,\cellcolor{gray15}Split,\cellcolor{gray15}0.1907,\cellcolor{gray15}0.0026
+Modify,-0.0092,0.5437,,Try,0.1241,0.1456
