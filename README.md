@@ -1,10 +1,10 @@
 ## Links
-**Paper:** https://link.springer.com/article/10.1007/s10664-025-10801-3
+**Paper:** https://link.springer.com/article/10.1007/s10664-025-10801-3 <br>
 **Repo Link:** https://zenodo.org/records/15209118
 
 ## Project Details
 ### Research Questions
-**RQ1:** Can we replicate the paper’s findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects?
+**RQ1:** Can we replicate the paper’s findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects? <br>
 **RQ2:** Does the paper’s rule for ideal refactoring duration still hold true on modern Java code, and which refactoring choices give us the best code quality when handling new feature requests
 
 ### M1
