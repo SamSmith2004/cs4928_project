@@ -4,20 +4,20 @@
 
 ## Project Details
 #### RQ1
-Can we replicate the paper’s findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects? 
+Can we replicate the paper’s findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects?
 ##### Bounded
-Replicate 3 of the Java projects from the paper's 48 analysed project
+First 4 Move + 4 Rename cases from each of sling-whiteboard, incubator-tamaya-sandbox and ofbiz-framework (the 3 smallest projects with 12+ of each)
 ##### Method
-Collect commits and run pipeline on code
+Check 1: over half the cases last fewer than 10 later refactorings. Check 2: at least 10 of 12 recalculated cases match the paper (within 0.02). 
+Both checks pass for both families = reproduced; Check 1 fails for both or fewer than 6 match = not reproduced; anything else = partly. 
 ##### Expected Result
-Partial reproduction of papers findings on our sample
+Partly reproduced (most effects short, some numbers won’t match)
 
 #### RQ2 
-Does the paper’s rule for ideal refactoring duration still hold true on modern Java code, and which refactoring choices give us the best code quality when handling new feature requests
+Does it transfer to a held-out project?
 ##### Bounded
-A manually selected seperate 3 projects which have recent(2024 or later)
+First 12 Move + 12 Rename cases from held-out project any23. Case IDs in the M1 plan.
 ##### Method
-Collect recent commits and run same pipeline on code
+Uses the same checks. Sensitivity: 1%, 5% and 10% cut-offs.
 ##### Expected Result
-Rule only weakly supported or not supported
-
+Partly transfers to any23. The cut-off won’t change the answer.
