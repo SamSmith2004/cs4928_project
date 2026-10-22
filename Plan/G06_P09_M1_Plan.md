@@ -1,70 +1,56 @@
-# M1: Study, RQs and Preregistration
+# M1: Freeze the Reproduction Plan
 
-**CS4928 Group Project · Group G06 · Pack P09: Long-Term Ripple Effects of Refactoring · Version 4.1**
-
-> **Status: draft for group review.** When the group agrees, commit this plan and tag it `M1_PLAN` **before** running any analysis. After that, don't edit it. Any later change goes in a dated "Amendments" section with the reason.
+**CS4928 Group Project · Group G06 · Pack P09: Long-Term Ripple Effects of Refactoring**
 
 | Item | Details |
 |---|---|
 | Group / Pack | G06 / P09: Long-Term Ripple Effects of Refactoring |
 | Paper | Robredo et al., "Analyzing the ripple effects of refactoring", *Empirical Software Engineering* 31:134 (2026), DOI 10.1007/s10664-025-10801-3 |
-| Authors' data and code | Zenodo record 15209118 (version 1, in our repo). The newer version 17275710 (2025-10-06) also includes the raw data (5.9 GB download) |
-| Task set by the pack | Reproduce one small part of the paper: compare two refactoring families, recreate one table or plot, and check how much one threshold affects the result |
+| Authors' artefact | Zenodo record 15209118, v1.0 (2025-04-25), `submitted-replication-package.zip` |
+| Results file used | `Results/cross_project_raw_results.csv` from that zip (in our repo)|
 
 ---
 
-## 1. Research questions
+## 1. Research questions and target result
 
 **RQ1.** Can we replicate the paper's findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects?
 
 **RQ2.** Does it transfer to a held-out project/refactoring family?
 
-### What these mean in practice
-- **RQ1:** In 3 of the paper's projects, do most Move and Rename refactorings have an effect that lasts **fewer than 10** later refactorings? And when we recalculate the paper's numbers for these cases, do we get the same values?
-- **RQ2:** Do we get the same answer in a different project (**any23**) that RQ1 doesn't use?
+| | RQ1 | RQ2 |
+|---|---|---|
+| **Source anchor** | Paper §4.1 (RQ1 results) and the authors' figure "Distribution of RE duration by refactoring family" (`Figures/RQ1/RQ1_RT-NoRef.pdf` in the artefact). Underlying data: `Results/cross_project_raw_results.csv`, columns `#refactorings` and `lcs_remaining_probs` | Same claim and data, applied to a project not used in RQ1 |
+| **Target result** | The paper's claim that a refactoring's ripple effect (RE) **usually lasts fewer than 10 later refactorings**, with a few lasting much longer (over 190) | The same claim holds in the held-out project **any23** |
+| **What our run produces** | For Move and Rename separately: how many of 12 cases last fewer than 10, and how many of 12 cases have recalculated remaining-code values that match the paper's. Plus a redrawn version of the paper's chart for Move and Rename | The same outputs for the any23 sample |
 
-### The finding we are testing
-The paper says the effect of a refactoring **usually lasts for fewer than 10 later refactorings**, though a few last much longer (over 190). (Paper section 4.1.)
 
-We will redraw the paper's chart of how long effects last for each refactoring family (`Figures/RQ1/RQ1_RT-NoRef.pdf`), using only Move and Rename and only our sample.
-
-### Key terms
-
-| Term | What it means here |
-|---|---|
-| Refactoring | A change that cleans up code without changing what it does (e.g. moving a method to another class, renaming a variable) |
-| Refactoring family | A group of related refactoring types, named by the first word. **Move** = Move Method, Move Class, Move Attribute, etc. **Rename** = Rename Method, Rename Variable, etc. |
-| Case | One refactoring in one Java class, followed over time. Each case has an ID in the paper's results file (`class_id`) |
-| How long the effect lasts | The number of later refactorings of the same type in the same class. The paper calls this the ripple effect (RE) duration |
-| "A short time" | Fewer than 10 later refactorings (the paper's own cut-off) |
-| "Most" | More than half |
-| Code still remaining | How much of the class's original code is still there after each later change, from 0 (none) to 1 (all). The paper measures this by comparing the class's lines before and after |
-| The 1% rule | The paper says the effect has ended once less than 1% of the original code remains |
-
-### Why Move and Rename
-- They show the paper's main contrast: **big structural changes** (moving code between classes) vs **small local changes** (renaming).
-- Both are common (about 7,000 Move and 15,000 Rename examples), so even small projects have enough cases.
-- The paper reports a direct comparison of these two families: Rename's effects last longer than Move's. We will check whether our sample agrees.
+### Out of scope at M1
+- Any refactoring family other than Move and Rename (the paper has 20).
+- Any project other than the 4 named in Section 2.
+- The paper's RQ2 (change and defect proneness) and RQ3 (developer effort).
+- The Bayesian measure (`bayesian_remaining_probs`) and the paper's statistical tests (Kruskal-Wallis, Dunn). We compare Move and Rename by description only.
+- Re-running the authors' mining pipeline (RefactoringMiner, SCC, `01_proneness_calculator.py`). We use their published results and recalculate only the remaining-code values for our 48 cases.
 
 ---
 
-## 2. Sample
+## 2. Bounded sample
+| Element | Frozen value |
+|---|---|
+| Unit of analysis | One case (one `class_id`) |
+| Source/version | `Results/cross_project_raw_results.csv` from Zenodo 15209118 v1.0. For Check 2, the projects' git history from GitHub (`apache/<project>`) at the exact commit hashes in the CSV's `hash` column |
+| Size | 48 cases: RQ1 = 12 Move + 12 Rename across 3 projects; RQ2 = 12 Move + 12 Rename from any23 |
+| Selection rule, projects | Keep projects with at least 12 Move cases **and** at least 12 Rename cases. Exclude `hop` and `incubator-hop`, which are the same project listed twice. **RQ1:** the 3 projects with the fewest rows in the CSV. **RQ2:** of the remaining eligible projects, the first alphabetically |
+| Selection rule, cases | RQ1: the first 4 Move and first 4 Rename cases from each project. RQ2: the first 12 Move and first 12 Rename cases. "First" means sorted by case number (the leading integer of `class_id`), then by `class_id`, then by first date |
+| Exclusions | `hop` / `incubator-hop` (duplicate project). No other exclusions |
 
-### RQ1: which projects
-**Rule:** from the paper's 47 projects, keep those with at least 12 Move cases **and** at least 12 Rename cases. Leave out `hop` and `incubator-hop`, which are the same project listed twice. Then take the **3 smallest** (fewest rows in the paper's results, so the cheapest to analyse).
+If the coordinator releases a different held-out project for RQ2, we apply the same case rule to it and log an amendment.
 
-| # | Project | Rows in results | Move cases | Rename cases |
-|---|---|---|---|---|
-| 1 | sling-whiteboard | 213 | 23 | 22 |
-| 2 | incubator-tamaya-sandbox | 225 | 33 | 25 |
-| 3 | ofbiz-framework | 1,020 | 14 | 60 |
-
-### RQ1: which cases
-**Rule:** from each project, take the **first 4 Move and first 4 Rename cases**, giving 12 of each in total.
-
-"First" means in a fixed order: by case number, then by class name, then by date. This means anyone can redraw the same sample, and we can't pick cases that suit us.
-
-*Why 4 from each project:* the pack suggests "the first 12". But taking the first 12 across all three projects together would take nothing from incubator-tamaya-sandbox. Taking 4 from each project makes sure all three are included.
+### RQ1 projects
+| Project | Rows in CSV | Move cases | Rename cases |
+|---|---|---|---|
+| sling-whiteboard | 213 | 23 | 22 |
+| incubator-tamaya-sandbox | 225 | 33 | 25 |
+| ofbiz-framework | 1,020 | 14 | 60 |
 
 #### RQ1 sample: Move
 | # | Case ID | Refactoring type | Project | First date |
@@ -97,9 +83,6 @@ We will redraw the paper's chart of how long effects last for each refactoring f
 | 10 | `12_0_rename-parameter_ofbiz-framework-1-JWTManager` | Rename Parameter | ofbiz-framework | 2019-04-21 |
 | 11 | `13_0_rename-variable_ofbiz-framework-1-JWTManager` | Rename Variable | ofbiz-framework | 2019-04-21 |
 | 12 | `14_1_rename-variable_ofbiz-framework-1-JWTManager` | Rename Variable | ofbiz-framework | 2019-04-21 |
-
-### RQ2: which project and cases
-**Rule:** from the remaining projects that pass the same check (at least 12 of each family), take the first in alphabetical order. That is **any23**. From it, take the **first 12 Move and first 12 Rename cases** in the same fixed order.
 
 #### RQ2 sample: Move in any23
 | # | Case ID | Refactoring type | First date |
@@ -135,105 +118,71 @@ We will redraw the paper's chart of how long effects last for each refactoring f
 
 ---
 
-## 3. Method
-1. **Set up.** Use a fresh Python environment with only the packages we need. Write down the versions used.
-2. **Get the data.** Use the paper's results file from our repo (`Results/cross_project_raw_results.csv`). Download the newer Zenodo version to get the code history for each project.
-3. **Check the claim.** For each sample and each family, count how many cases have an effect lasting fewer than 10 later refactorings. Redraw the paper's chart for Move and Rename.
-4. **Recalculate the numbers.** For each of the 48 cases, take the class's code at the original refactoring and at each later one. Work out how much of the original code remains, using the authors' own code. Compare our numbers with the paper's.
-5. **Compare the families.** Report whether Move or Rename effects last longer in our samples. With only 12 cases per family this is a description, not proof.
-6. **Check the 1% rule (sensitivity check).** Repeat step 3 with the cut-off at 1% (the paper), 5% and 10%.
-7. **Keep everything.** Commit every script and its output to the repo. Never edit results by hand.
+## 3. Method: inputs → procedure → output
+
+| Inputs | Procedure | Output / decision |
+|---|---|---|
+| `Results/cross_project_raw_results.csv`, filtered to the 48 case IDs in Section 2 | **Check 1.** For each case, RE duration = largest `#refactorings`. Count the cases with RE duration < 10, per family and per RQ | Number of short cases out of 12 for each family. Compared with the paper's claim using the rule in Section 4 |
+| The same 48 cases, plus each project's git history cloned from GitHub at the commit hashes in the CSV | **Check 2.** For each case, recalculate `lcs_remaining_probs` at every later commit using the authors' own function `get_lcs_probabilities` (`Scripts/02_get_bcp.py:167`). We change only the hard-coded file paths. Compare each recalculated value with the CSV value | Number of matching cases out of 12 for each family. Compared using the rule in Section 4 |
+| Check 1 RE durations | Box plot of RE duration for Move vs Rename, one per RQ, in the style of `Figures/RQ1/RQ1_RT-NoRef.pdf` | Redrawn chart, compared visually with the paper's. Not used in the verdict |
+| Check 1 RE durations | Median RE duration for Move and Rename | Which family lasts longer in our sample. Description only |
+| `lcs_remaining_probs` per row | **Sensitivity.** Cut each case off at the first row where remaining code is below 1%, 5% or 10%, then redo the Check 1 count | Short-case counts at each cut-off. Not used in the verdict |
+
+### Parameters that affect the result
+
+| Parameter | Value | Where it comes from |
+|---|---|---|
+| "Short" cut-off | RE duration < 10 | Paper §4.1 |
+| End-of-effect threshold | 1% remaining code | Paper. The authors' code does not apply it (829 cases continue below 1%), so Check 1 uses the CSV as published |
+| RE duration of a case | Largest `#refactorings` in the case's rows | Group decision: one number per case, using the authors' own counter |
+| Count by case or by row | By case (each case counts once) | Group decision: our sample is defined in cases |
+| "Most" | More than half: at least 7 of 12 | Group decision: plain meaning of "most" |
+| Match tolerance | Within ±0.02 of the CSV value | Group decision: allows for rounding and library differences on a 0–1 scale |
+| Matches needed | At least 10 of 12 cases per family | Group decision: allows up to 2 cases hit by the authors' code recording missing files as 0 |
+| Selection thresholds | At least 12 cases per family per project; 4 cases per project for RQ1 | Group decision |
+| Sensitivity cut-offs | 1%, 5%, 10% | 1% from the paper; 5% and 10% are group decisions |
 
 ---
 
-## 4. How we decide the answer
+## 4. Expected result and decision rule
 
-### Two checks, done for Move and Rename separately
-- **Check 1 (the claim):** more than half of the family's cases have an effect lasting fewer than 10 later refactorings.
-- **Check 2 (matching numbers):** at least 10 of the 12 cases match the paper. A case matches if every recalculated value is within 0.02 of the paper's value.
+### Decision rule
+Each check gets a verdict separately for Move and for Rename.
 
-### RQ1 answer
-
-| Answer | When |
+**Check 1** (is the claim true for our sample?)
+| Verdict | When |
 |---|---|
-| **Reproduced** | Both checks pass for both families |
-| **Partly reproduced** | Check 1 passes for only one family, **or** Check 1 passes for both but only 6–9 cases match in a family |
-| **Not reproduced** | Check 1 fails for both families, **or** fewer than 6 cases match in either family |
-| **Couldn't run it** | If we can't get the code history after documented attempts, we answer using Check 1 only (the paper's published numbers) and say so |
+| REPRODUCED | At least 7 of the 12 cases have RE duration < 10 |
+| NOT REPRODUCED | 6 or fewer of the 12 cases have RE duration < 10 |
+| INCONCLUSIVE / BLOCKED | Any sample case is missing from the CSV or has no `#refactorings` value |
 
-### RQ2 answer
-The same two checks, on the any23 sample.
-
-| Answer | When |
+**Check 2** (do our recalculated numbers match the paper's?) A case matches if **every** recalculated value is within ±0.02 of the CSV value. A case we can't recalculate (for example the commit or file can't be found) is listed with the reason. It counts as neither a match nor a mismatch.
+| Verdict | When |
 |---|---|
-| **Transfers** | Both checks pass for both families |
-| **Partly transfers** | A mixed result |
-| **Does not transfer** | Check 1 fails for both families, or fewer than 6 cases match in either family |
+| REPRODUCED | At least 10 cases match |
+| NOT REPRODUCED | At least 3 recalculated cases don't match, so 10 matches is impossible |
+| INCONCLUSIVE / BLOCKED | Neither of the above, because too many cases couldn't be recalculated. This includes the authors' code not running after documented attempts |
 
-**For comparison, the paper's full data:** 87% of all cases last fewer than 10 later refactorings.
+**Overall answer for each RQ** (both checks, both families):
+1. **NOT REPRODUCED** if any check is NOT REPRODUCED for either family.
+2. Otherwise **INCONCLUSIVE / BLOCKED** if any check is INCONCLUSIVE / BLOCKED.
+3. Otherwise **REPRODUCED**.
 
----
+RQ2 uses the same rule on the any23 sample.
 
-## 5. Sensitivity check: the 1% rule
-The paper says an effect ends once less than 1% of the original code remains. But the authors' code doesn't actually apply this rule: in their data, 829 cases keep going after dropping below 1%.
-
-So we will recount how long each effect lasts if we **stop it** once the remaining code drops below 1%, 5% or 10%, and see how much our results change.
-
-Stopping effects earlier can only make them shorter, so this can't make Check 1 fail. What we report is **how much** the numbers change. If our answer stays the same at every cut-off, we call it **robust**.
-
----
-
-## 6. What we expect (written before running anything)
-- **RQ1: partly reproduced.** We expect most effects to be short (Check 1 passes), but some recalculated numbers won't match. The authors' code records 0 when it can't find a file (for example after it was renamed), and the comparison method behaves differently on very long files.
-- **RQ2: partly transfers.** We expect the same pattern in any23.
-- **Sensitivity check:** effects get shorter at higher cut-offs, but our answer stays the same.
-
-### What counts as not reproduced
-Half or fewer of the cases are short in both families, or fewer than 6 of 12 cases match in either family. If that happens we report it as a result. We don't change the method to get a better match.
+### Expected result (written before running anything)
+- **If the finding reproduces:** at least 7 of 12 cases per family have RE duration < 10, and at least 10 of 12 cases per family match.
+- **RQ1 prediction:** Check 1 REPRODUCED for both families. Check 2 NOT REPRODUCED for at least one family, because the authors' code records missing files as 0 and LCS behaves differently on very long files. **Predicted overall: NOT REPRODUCED** (the claim holds, the numbers don't fully match).
+- **RQ2 prediction:** the same pattern in any23.
+- **Sensitivity:** RE durations get shorter at higher cut-offs; the Check 1 verdict doesn't change.
 
 ---
 
-## 7. Things we noticed before starting
-Found by reading the authors' published files and code. No analysis has been run yet.
+## 5. Feasibility check
 
-1. **The paper counts rows, not cases.** The paper's figures (half of effects under 4, three-quarters under 9) come from counting every row in its results file. Long-lasting cases have many rows, so they count many times. Counting each case once gives half under 2 and three-quarters under 5.
-2. **The 1% rule isn't applied in the code** (see Section 5).
-3. **Missing files are recorded as 0.** When the code can't find a file, it records "no code remaining" instead of "missing".
-4. **47 projects, not 48.** The paper says 48, but the data has 47 project names, and two of those (`hop`, `incubator-hop`) look like the same project.
-5. **Cases are bunched together.** For example, all four ofbiz-framework Move cases are in the same class on the same day. So the cases aren't fully independent.
+| Check | Evidence | Result |
+|---|---|---|
+| Data loads and the sample rules give exactly the 48 case IDs above | `python Plan/m1_draw_sample.py` (output in `Plan/m1_feasibility_output.txt`) | OK |
+| Project git histories for Check 2 are reachable | One sample commit per project looked up on GitHub | OK for all 4 |
 
----
-
-## 8. Where we differ from the pack
-- **RQ1 wording** is our group's own, not the pack's suggestion. We keep it within the pack's scope by limiting it to 3 projects and two families.
-- **Sample size:** 4 cases per family from each of 3 projects instead of "the first 12" overall, so every project is included. RQ2 uses the pack's rule as written.
-- **Approach:** we use the authors' published results and recalculate a small number of cases. We don't rerun their whole mining tool, as the pack advises.
-
----
-
-## 9. Link to the Week 9 design decision
-The authors' code is hard to run: file paths are hard-coded to their computer, a settings file is missing, and the scripts are very long. This is a likely design problem for Week 9. We'll compare at least two options then, including leaving it as it is.
-
----
-
-## 10. Evidence we will keep
-The Zenodo versions and download date, the version of each project's code we used, the script that draws the sample and its output, our recalculated numbers next to the paper's, the redrawn chart, the sensitivity results, and notes on anything that failed.
-
----
-
-## Workbook entry (ready to paste)
-
-**RQ1**
-> Can we replicate the paper's findings, that most code refactorings only affect future changes for a short time when testing a smaller set of Java projects?
-
-**RQ2**
-> Does it transfer to a held-out project/refactoring family?
-
-**Bounded sample / case IDs**
-> RQ1: first 4 Move + 4 Rename cases from each of sling-whiteboard, incubator-tamaya-sandbox and ofbiz-framework (the 3 smallest projects with 12+ of each). RQ2: first 12 Move + 12 Rename cases from held-out project any23. Case IDs in the M1 plan.
-
-**Method / metric or decision rule**
-> Check 1: over half the cases last fewer than 10 later refactorings. Check 2: at least 10 of 12 recalculated cases match the paper (within 0.02). Both checks pass for both families = reproduced; Check 1 fails for both or fewer than 6 match = not reproduced; anything else = partly. RQ2 uses the same checks. Sensitivity: 1%, 5% and 10% cut-offs.
-
-**Expected result before execution**
-> RQ1: partly reproduced (most effects short, some numbers won't match). RQ2: partly transfers to any23. The cut-off won't change the answer.
+**No blocker.** Risk for Check 2: the authors' code has hard-coded Windows paths (`Scripts/components/utility.py:20-21`). If it can't be made to run, Check 2 is INCONCLUSIVE / BLOCKED.

@@ -1,0 +1,4 @@
+$ python Plan/m1_draw_sample.py
+Loaded 108523 rows, 47 projects
+RQ1 projects: ['sling-whiteboard', 'incubator-tamaya-sandbox', 'ofbiz-framework']  RQ2 project: any23
+Cases drawn: 48, all in plan: True 
