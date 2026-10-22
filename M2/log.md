@@ -1,4 +1,5 @@
 # M2 Reproduction Log
+Note: All work had to be done on single machine due to the data folder being 23GB
 
 **Frozen plan:** [Plan/G06_P09_M1_Plan.md](../Plan/G06_P09_M1_Plan.md) (commit `044bcea`, tag `M1_PLAN`)
 **Data:** `Results/cross_project_raw_results.csv` + selected authors' files from Zenodo 15209118 v1.0
