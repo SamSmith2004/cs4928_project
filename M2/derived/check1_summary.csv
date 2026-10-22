@@ -1,0 +1,5 @@
+rq,family,n_cases,n_short,verdict
+RQ1,Move,12,12,REPRODUCED
+RQ1,Rename,12,12,REPRODUCED
+RQ2,Move,12,12,REPRODUCED
+RQ2,Rename,12,9,REPRODUCED

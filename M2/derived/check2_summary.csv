@@ -1,0 +1,5 @@
+rq,family,match,mismatch,not_recalculated,verdict
+RQ1,Move,12,0,0,REPRODUCED
+RQ1,Rename,12,0,0,REPRODUCED
+RQ2,Move,12,0,0,REPRODUCED
+RQ2,Rename,12,0,0,REPRODUCED

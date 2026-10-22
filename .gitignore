@@ -1,2 +1,7 @@
 /Data
 /testing
+/M2/.venv
+/M2/repos
+/M2/inputs/zenodo
+__pycache__/
+/M2/raw/check2_logs

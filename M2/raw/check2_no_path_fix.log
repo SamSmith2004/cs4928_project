@@ -1,0 +1,8 @@
+# Diagnostic pilot WITHOUT path repair 2 (Windows '\' separators left in place), case 27_0_move-and-rename-method_sling-whiteboard-1-TransformationContextImpl
+# Result: all 3 values came back 0.0 (paper: 0.919 / 0.888 / 0.878). With the repair, all 3 match exactly (raw/check2_pilot_values.csv).
+# Lines below are the authors' logger output from that run, copied unchanged:
+Starting LCS probability calculation for transformer/src/main/java/org/apache/sling/transformer/impl/TransformationContextImpl.java
+Skipping LCS calculation at 30bd8b5c613fd9ad8e867ad22bf5bf16fec53d44 due to missing content.
+Skipping LCS calculation at d469093fcced4a3a7a61d6cc62be3997d673a597 due to missing content.
+Skipping LCS calculation at 33ca9ed64150b2ee943e08f70b6997d5f5b0433f due to missing content.
+Completed LCS probability calculation for transformer/src/main/java/org/apache/sling/transformer/impl/TransformationContextImpl.java

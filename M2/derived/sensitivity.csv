@@ -1,0 +1,17 @@
+cutoff,rq,family,n_short,median_duration
+none (as published),RQ1,Move,12,3.0
+none (as published),RQ1,Rename,12,2.0
+none (as published),RQ2,Move,12,5.0
+none (as published),RQ2,Rename,9,6.0
+1%,RQ1,Move,12,3.0
+1%,RQ1,Rename,12,2.0
+1%,RQ2,Move,12,5.0
+1%,RQ2,Rename,9,6.0
+5%,RQ1,Move,12,3.0
+5%,RQ1,Rename,12,2.0
+5%,RQ2,Move,12,5.0
+5%,RQ2,Rename,9,6.0
+10%,RQ1,Move,12,3.0
+10%,RQ1,Rename,12,2.0
+10%,RQ2,Move,12,5.0
+10%,RQ2,Rename,9,6.0

@@ -1,0 +1,4 @@
+rq,family,class_id,#refactorings,hash,paper_value,our_value,diff,note,match
+RQ1,Move,27_0_move-and-rename-method_sling-whiteboard-1-TransformationContextImpl,1,30bd8b5c613fd9ad8e867ad22bf5bf16fec53d44,0.919431279620853,0.919431279620853,0.0,,True
+RQ1,Move,27_0_move-and-rename-method_sling-whiteboard-1-TransformationContextImpl,2,d469093fcced4a3a7a61d6cc62be3997d673a597,0.8878048780487805,0.8878048780487805,0.0,,True
+RQ1,Move,27_0_move-and-rename-method_sling-whiteboard-1-TransformationContextImpl,3,33ca9ed64150b2ee943e08f70b6997d5f5b0433f,0.8780487804878049,0.8780487804878049,0.0,,True
