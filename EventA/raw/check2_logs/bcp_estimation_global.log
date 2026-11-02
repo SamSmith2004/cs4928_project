@@ -1,0 +1,48 @@
+2026-11-02 11:00:40,237 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-combinatorics/src/main/java/org/apache/commons/numbers/combinatorics/Factorial.java
+2026-11-02 11:00:44,135 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-combinatorics/src/main/java/org/apache/commons/numbers/combinatorics/Factorial.java
+2026-11-02 11:00:44,188 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:00:56,538 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:00:56,857 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:01:06,445 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:01:06,495 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:01:17,055 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:01:17,120 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:24,586 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:24,636 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:29,856 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:29,921 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:36,670 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:36,722 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:42,974 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:43,035 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:49,655 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:49,705 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:57,621 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/SumTest.java
+2026-11-02 11:01:57,670 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/ExtendedPrecision.java
+2026-11-02 11:02:05,503 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/ExtendedPrecision.java
+2026-11-02 11:02:05,554 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/DoubleTestUtils.java
+2026-11-02 11:02:09,180 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/test/java/org/apache/commons/numbers/core/DoubleTestUtils.java
+2026-11-02 11:02:09,231 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:15,394 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:15,445 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:20,828 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:20,885 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:25,933 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:25,987 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:31,342 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:31,392 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:38,225 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:38,281 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:46,097 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:46,159 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:56,236 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:02:56,300 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:03:04,446 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:03:04,510 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:03:12,614 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-gamma/src/main/java/org/apache/commons/numbers/gamma/BoostErf.java
+2026-11-02 11:03:12,665 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:03:22,482 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:03:22,533 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:03:31,637 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:03:31,689 - MainProcess - get_lcs_probabilities - INFO - Starting LCS probability calculation for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java
+2026-11-02 11:03:40,434 - MainProcess - get_lcs_probabilities - INFO - Completed LCS probability for commons-numbers-core/src/main/java/org/apache/commons/numbers/core/Sum.java

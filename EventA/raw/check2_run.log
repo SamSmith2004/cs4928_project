@@ -1,7 +1,82 @@
-Traceback (most recent call last):
-  File "C:\Users\sarah\OneDrive\Desktop\UL work\abdulProj\cs4928_project\EventA\scripts\check2.py", line 27, in <module>
-    import components.utility as utility  
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\sarah\OneDrive\Desktop\UL work\abdulProj\cs4928_project\Scripts\components\utility.py", line 8, in <module>
-    import requests
-ModuleNotFoundError: No module named 'requests'
+EA Move 28_0_move-and-rename-attribute_commons-numbers-1-Factorial
+EA Move 101_0_move-and-rename-method_commons-numbers-1-Sum
+EA Move 110_1_move-and-rename-method_commons-numbers-1-Sum
+EA Move 117_2_move-and-rename-method_commons-numbers-1-Sum
+EA Move 118_3_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 120_4_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 122_5_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 123_6_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 124_7_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 125_8_move-and-rename-method_commons-numbers-1-SumTest
+EA Move 131_2_move-class_commons-numbers-1-ExtendedPrecision
+EA Move 135_6_move-class_commons-numbers-1-DoubleTestUtils
+EA Rename 6_0_rename-variable_commons-numbers-1-BoostErf
+EA Rename 7_1_rename-variable_commons-numbers-1-BoostErf
+EA Rename 8_2_rename-variable_commons-numbers-1-BoostErf
+EA Rename 9_3_rename-variable_commons-numbers-1-BoostErf
+EA Rename 10_4_rename-variable_commons-numbers-1-BoostErf
+EA Rename 11_5_rename-variable_commons-numbers-1-BoostErf
+EA Rename 12_0_rename-parameter_commons-numbers-1-BoostErf
+EA Rename 14_6_rename-variable_commons-numbers-1-BoostErf
+EA Rename 15_7_rename-variable_commons-numbers-1-BoostErf
+EA Rename 103_0_rename-variable_commons-numbers-1-Sum
+EA Rename 104_1_rename-variable_commons-numbers-1-Sum
+EA Rename 105_2_rename-variable_commons-numbers-1-Sum
+
+                                                  class_id  #refactorings  paper_value  our_value  match
+28_0_move-and-rename-attribute_commons-numbers-1-Factorial              1     0.975332   0.975332   True
+        101_0_move-and-rename-method_commons-numbers-1-Sum              1     0.360225   0.360225   True
+        101_0_move-and-rename-method_commons-numbers-1-Sum              2     0.356473   0.356473   True
+        101_0_move-and-rename-method_commons-numbers-1-Sum              3     0.322820   0.322820   True
+        110_1_move-and-rename-method_commons-numbers-1-Sum              1     0.360225   0.360225   True
+        110_1_move-and-rename-method_commons-numbers-1-Sum              2     0.356473   0.356473   True
+        110_1_move-and-rename-method_commons-numbers-1-Sum              3     0.322820   0.322820   True
+        117_2_move-and-rename-method_commons-numbers-1-Sum              1     0.360225   0.360225   True
+        117_2_move-and-rename-method_commons-numbers-1-Sum              2     0.356473   0.356473   True
+        117_2_move-and-rename-method_commons-numbers-1-Sum              3     0.322820   0.322820   True
+    118_3_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    118_3_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+    120_4_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    120_4_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+    122_5_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    122_5_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+    123_6_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    123_6_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+    124_7_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    124_7_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+    125_8_move-and-rename-method_commons-numbers-1-SumTest              1     0.957502   0.957502   True
+    125_8_move-and-rename-method_commons-numbers-1-SumTest              2     0.923077   0.923077   True
+      131_2_move-class_commons-numbers-1-ExtendedPrecision              1     0.504717   0.504717   True
+      131_2_move-class_commons-numbers-1-ExtendedPrecision              2     0.474041   0.474041   True
+        135_6_move-class_commons-numbers-1-DoubleTestUtils              1     0.913907   0.913907   True
+            6_0_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+            6_0_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+            7_1_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+            7_1_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+            8_2_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+            8_2_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+            9_3_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+            9_3_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+           10_4_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+           10_4_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+           11_5_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+           11_5_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+          12_0_rename-parameter_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+          12_0_rename-parameter_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+           14_6_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+           14_6_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+           15_7_rename-variable_commons-numbers-1-BoostErf              1     0.937575   0.937575   True
+           15_7_rename-variable_commons-numbers-1-BoostErf              2     0.929172   0.929172   True
+               103_0_rename-variable_commons-numbers-1-Sum              1     0.360225   0.360225   True
+               103_0_rename-variable_commons-numbers-1-Sum              2     0.356473   0.356473   True
+               103_0_rename-variable_commons-numbers-1-Sum              3     0.322820   0.322820   True
+               104_1_rename-variable_commons-numbers-1-Sum              1     0.360225   0.360225   True
+               104_1_rename-variable_commons-numbers-1-Sum              2     0.356473   0.356473   True
+               104_1_rename-variable_commons-numbers-1-Sum              3     0.322820   0.322820   True
+               105_2_rename-variable_commons-numbers-1-Sum              1     0.360225   0.360225   True
+               105_2_rename-variable_commons-numbers-1-Sum              2     0.356473   0.356473   True
+               105_2_rename-variable_commons-numbers-1-Sum              3     0.322820   0.322820   True
+
+rq family  match  mismatch  not_recalculated    verdict
+EA   Move     12         0                 0 REPRODUCED
+EA Rename     12         0                 0 REPRODUCED
