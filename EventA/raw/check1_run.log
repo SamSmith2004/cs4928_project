@@ -1,0 +1,6 @@
+Authors' rows for our sample: 52 (saved to EventA/raw/sample_rows.csv)
+Cases missing from CSV or without #refactorings: none
+
+rq family  n_cases  n_short    verdict
+EA   Move       12       12 REPRODUCED
+EA Rename       12       12 REPRODUCED

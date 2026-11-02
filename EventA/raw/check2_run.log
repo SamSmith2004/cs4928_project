@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\sarah\OneDrive\Desktop\UL work\abdulProj\cs4928_project\EventA\scripts\check2.py", line 27, in <module>
+    import components.utility as utility  
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sarah\OneDrive\Desktop\UL work\abdulProj\cs4928_project\Scripts\components\utility.py", line 8, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
