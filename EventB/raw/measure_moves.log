@@ -1,0 +1,12 @@
+control: 271/271 non-flagged rows within ±0.02; largest difference 0.000000
+Empty DataFrame
+Columns: [sample, class_id, hash, paper_value, move_aware_value]
+Index: []
+
+                                       class_id  #refactorings    hash  paper_value  move_aware_value
+ 31_0_move-and-rename-class_any23-1-IssueReport              1 cb777c4          0.0          1.000000
+ 93_1_move-and-rename-class_any23-1-IssueReport              1 cb777c4          0.0          1.000000
+123_2_move-class_any23-2-ExtractorDocumentation              6 242b130          0.0          0.587678
+       124_3_move-class_any23-2-MicrodataParser              6 242b130          0.0          0.623656
+          125_4_move-class_any23-2-MimeDetector              5 242b130          0.0          0.483721
+        126_5_move-class_any23-2-PluginVerifier              5 242b130          0.0          0.617021
