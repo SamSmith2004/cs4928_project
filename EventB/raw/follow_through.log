@@ -1,0 +1,40 @@
+control: 72/72 cases reproduce the published commits with the stale path
+Empty DataFrame
+Columns: [class_id, published_commits, stale_walk_commits]
+Index: []
+
+sample  rq family  n_cases  published_short  move_aware_short  whole_refactoring_short  published_median  move_aware_median  largest_move_aware  control_ok published_verdict move_aware_verdict
+    M2 RQ2   Move       12               12                11                        9               5.0                5.0                  10          12        REPRODUCED         REPRODUCED
+    M2 RQ2 Rename       12                9                 9                        9               6.0                6.0                  15          12        REPRODUCED         REPRODUCED
+    M2 RQ1 Rename       12               12                12                       12               2.0                2.0                   8          12        REPRODUCED         REPRODUCED
+    M2 RQ1   Move       12               12                12                       12               3.0                3.0                   8          12        REPRODUCED         REPRODUCED
+EventA  EA Rename       12               12                12                       12               2.0                2.0                   3          12        REPRODUCED         REPRODUCED
+EventA  EA   Move       12               12                12                       12               2.0                2.0                   3          12        REPRODUCED         REPRODUCED
+
+                                       class_id  published_duration  extra_commits  move_aware_duration  control_ok
+ 31_0_move-and-rename-class_any23-1-IssueReport                   1              3                    4        True
+ 93_1_move-and-rename-class_any23-1-IssueReport                   1              3                    4        True
+123_2_move-class_any23-2-ExtractorDocumentation                   6              4                   10        True
+       124_3_move-class_any23-2-MicrodataParser                   6              1                    7        True
+          125_4_move-class_any23-2-MimeDetector                   5              1                    6        True
+        126_5_move-class_any23-2-PluginVerifier                   5              4                    9        True
+
+cutoff sample  rq family  n_short  median_duration
+    1%     M2 RQ2   Move       11              5.0
+    1%     M2 RQ2 Rename        9              6.0
+    1%     M2 RQ1 Rename       12              2.0
+    1%     M2 RQ1   Move       12              3.0
+    1% EventA  EA Rename       12              2.0
+    1% EventA  EA   Move       12              2.0
+    5%     M2 RQ2   Move       11              5.0
+    5%     M2 RQ2 Rename        9              6.0
+    5%     M2 RQ1 Rename       12              2.0
+    5%     M2 RQ1   Move       12              3.0
+    5% EventA  EA Rename       12              2.0
+    5% EventA  EA   Move       12              2.0
+   10%     M2 RQ2   Move       11              5.0
+   10%     M2 RQ2 Rename        9              6.0
+   10%     M2 RQ1 Rename       12              2.0
+   10%     M2 RQ1   Move       12              3.0
+   10% EventA  EA Rename       12              2.0
+   10% EventA  EA   Move       12              2.0
