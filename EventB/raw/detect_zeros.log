@@ -1,0 +1,10 @@
+rows checked: 277; zero rows flagged: 6
+sample  rq   family
+M2      RQ2  Move      6
+                                       class_id    hash change_type  added  deleted  pydriller_source_is_none  authors_returned_lines  lines_in_git
+ 31_0_move-and-rename-class_any23-1-IssueReport cb777c4      RENAME      0        0                      True                       0           101
+ 93_1_move-and-rename-class_any23-1-IssueReport cb777c4      RENAME      0        0                      True                       0           101
+123_2_move-class_any23-2-ExtractorDocumentation 242b130      RENAME      0        0                      True                       0           186
+       124_3_move-class_any23-2-MicrodataParser 242b130      RENAME      0        0                      True                       0            99
+          125_4_move-class_any23-2-MimeDetector 242b130      RENAME      0        0                      True                       0           101
+        126_5_move-class_any23-2-PluginVerifier 242b130      RENAME      0        0                      True                       0            86
